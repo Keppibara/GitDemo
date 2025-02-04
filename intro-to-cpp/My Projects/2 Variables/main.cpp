@@ -5,23 +5,23 @@ int main()
 {
 
 	// main.cpp/main()
-    // ...
-    //A) My guess was 9
-    // answer was 14
+	// ...
+	//A) My guess was 9
+	// answer was 14
 
 
 	int numberA = 5;
 
 	numberA = 9;
 	numberA = 11;
-	numberA = 14;
+	numberA = 15;
 
 
 	std::cout << "A)" << numberA << std::endl;
 
 	//...
 
-	
+
 	{
 		//B)
 		// My guess is 22
@@ -44,11 +44,11 @@ int main()
 		numberC = 1;
 
 		int somethingC = 23;
-			somethingC = 21;
+		somethingC = 21;
 
-			numberC = somethingC;
+		numberC = somethingC;
 
-			std::cout << "C)" << numberC << std::endl;
+		std::cout << "C)" << numberC << std::endl;
 
 	}
 	{
@@ -63,13 +63,13 @@ int main()
 		std::cout << "D)" << somethingD << std::endl;
 
 	}
-	 
+
 	{
-	 // E)
-     // My guess is 6.5
-     // Answer was 6
+		// E)
+		// My guess is 6.5
+		// Answer was 6
 		int x = 13;
-		
+
 		x = x / 2;
 
 		std::cout << "E)" << x << std::endl;
@@ -80,12 +80,23 @@ int main()
 		//My guess is 6
 		//Answer is 2 
 		float y = 13;
-		
+
 		y = y = 2;
-		
+
 		std::cout << "F)" << y << std::endl;
 
 	}
+	{
+		//G)
+		float a = 24;
+
+		a = a = 3;
+
+		std::cout << "G)" << a << std::endl;
+		std::cin;
+	}
+
 }   
+
 
 
