@@ -87,13 +87,17 @@ int main()
 
 	}
 	{
-		//G)
-		float a = 24;
+		//Celsius to Fahrenheit)
 
-		a = a = 3;
+		float degCelsius = 78.0f;
+		float degFahrenheit = 0.0f; // modify this variable below
 
-		std::cout << "G)" << a << std::endl;
-		std::cin;
+
+
+
+		std::cout << "Celsius to Fahrenheit)" << std::endl;
+		std::cout << "Celsius:    " << degCelsius << std::endl;
+		std::cout << "Fahrenheit: " << degFahrenheit << std::endl;
 	}
 
 }   
