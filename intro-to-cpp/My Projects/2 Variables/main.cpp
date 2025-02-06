@@ -100,6 +100,22 @@ int main()
 		std::cout << "Fahrenheit: " << degFahrenheit << std::endl;
 	}
 
+	//Area of a Rectangle)
+	{
+		float rectWidth = 0.0f;
+		float rectHeight = 0.0f;
+		float rectArea = 0.0f;
+
+
+
+
+
+		std::cout << "Area of a Rectangle)" << std::endl;
+		std::cout << "H: " << rectHeight << ", W: " << rectWidth << std::endl;
+		std::cout << "Area:" << rectArea << std::endl;
+	}
+
+
 }   
 
 
