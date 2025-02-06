@@ -1,22 +1,21 @@
 #include <iostream>
     
 
-
 int main()
 {
 
 	// A)
 
-	int numberA = 5;
+	{int numberA = 5;
 
-	{
-		numberA = 9;
-		numberA = 11;
-		numberA = 14;
-	}
 
-	std::cout << "A)" << numberA << std::endl;
+	 numberA = 9;
+     numberA = 11;
+	 numberA = 14;
 
+
+	std::cout << "A) " << numberA << std::endl;
+}
 	
 
 	// B)
@@ -28,10 +27,13 @@ int main()
 		int thingB = 55;
 		thingB = 22;
 
+		numberB = thingB;
 
-		std::cout << "B)" << numberB << std::endl;
+
+		std::cout << "B) " << numberB << std::endl;  
 	}
 
+	// C)
 	{
 	
 		int numberC = 3;
@@ -43,25 +45,32 @@ int main()
 
 		numberC = somethingC;
 
-		std::cout << "C)" << numberC << std::endl;
+		std::cout << "C) " << numberC << std::endl;
 
 	}
+
+     // D)
 	{
 		
 		int numberD = 1;
-		int somethingD = 3;
+		numberD = 8;
 
+		int somethingD = 3;
+		somethingD = 10;
+		
 		numberD = somethingD;
 
-		std::cout << "D)" << somethingD << std::endl;
+		std::cout << "D) " << somethingD << std::endl;
 
 	}
-
+	 // E)
 	{
 		
 		int x = 13;
 
+		
 		x = x / 2;
+
 
 		std::cout << "E)" << x << std::endl;
 	}
@@ -83,16 +92,12 @@ int main()
 		float degCelsius = 78.0f;
 		float degFahrenheit = 0.0f; // modify this variable below
 
-		float degCelsius = 32.f * 5.f / 9.f;
+		degFahrenheit = (degCelsius * 9.f / 5.f + 32.f);
 
-		float CelsiusToFahrenheit = 9.f / 5.6 + 32.f;
 
-	
-	
-
-		std::cout << "Celsius to Fahrenheit)" << std::endl;
-		std::cout << "Celsius:78 " << degCelsius << std::endl;
-		std::cout << "Fahrenheit:0 " << degFahrenheit << std::endl;
+		std::cout << "Celsius to Fahrenheit)" << std::endl; 
+		std::cout << "Celsius: " << degCelsius << std::endl;
+		std::cout << "Fahrenheit: " << degFahrenheit << std::endl;
 	}
 
 }   
