@@ -1,6 +1,7 @@
 #include <iostream>
     
 
+
 int main()
 {
 
@@ -89,15 +90,21 @@ int main()
 	{
 		//Celsius to Fahrenheit)
 
+		
+
 		float degCelsius = 78.0f;
 		float degFahrenheit = 0.0f; // modify this variable below
 
+		float degCelsius = 32.f * 5.f / 9.f;
 
+		float CelsiusToFahrenheit = 9.f / 5.6 + 32.f;
 
+	
+	
 
 		std::cout << "Celsius to Fahrenheit)" << std::endl;
-		std::cout << "Celsius:    " << degCelsius << std::endl;
-		std::cout << "Fahrenheit: " << degFahrenheit << std::endl;
+		std::cout << "Celsius:78 " << degCelsius << std::endl;
+		std::cout << "Fahrenheit:0 " << degFahrenheit << std::endl;
 	}
 
 }   
