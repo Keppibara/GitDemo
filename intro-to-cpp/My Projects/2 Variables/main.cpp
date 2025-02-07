@@ -1,5 +1,5 @@
 #include <iostream>
-    
+
 
 int main()
 {
@@ -106,17 +106,67 @@ int main()
 		float rectHeight = 0.0f;
 		float rectArea = 0.0f;
 
-
-
-
+		rectWidth = 10 / 2 - rectWidth; 
+		rectHeight = 8 / 2 - rectHeight;
+		rectArea = rectHeight * rectWidth;
 
 		std::cout << "Area of a Rectangle)" << std::endl;
 		std::cout << "H: " << rectHeight << ", W: " << rectWidth << std::endl;
 		std::cout << "Area:" << rectArea << std::endl;
 	}
+	
+    //Average of Five
+	{
+		float a, b, c, d, e;
+		float avg;
+		avg = a = b = c = d = e = 5.0f;
+		
+		a = 1.0f;
+		b = 4.0f;
+		c = 5.0f;
+		d = 9.0f;
+		c = 20.0f;
+
+		avg = (a + b + c + d + e) / 5.0f; 
+
+		std::cout << "Average of Five" << std::endl;
+		std::cout << a << "," << b << "," << c << "," << d << "," << e << std::endl;
+		std::cout << "avg;" << avg << std::endl;
+	}
+
+	// Number Swap
+	{
+		int x = 13;	
+		int y = 24;
+
+		x = 13 * 2 - 2;
+		y = 24 / 2 + 1;
+		
+		std::cout << "Number Swap)" << std::endl;
+		std::cout << "x is " << x << std::endl;
+		std::cout << "y is " << y << std::endl; 
+	}
+
+	// Fun Facts for Your Age
+	{
+		int age = 0;
+
+		std::cout << " Enter your age: ";
+		std::cin >> age;
+		
+		int months_alive = age * 12;
+
+		std::cout << "Woah! You are " << age << " years old! ";
+		std::cout << " you've been alive for at least " << months_alive << " months!" << std::endl;
+	
+		return 0;
+	}
 
 
-}   
+}
+
+
+
 
 
 
