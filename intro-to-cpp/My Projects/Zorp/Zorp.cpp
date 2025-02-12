@@ -10,15 +10,18 @@ const char* RESET_COLOR = "\x1b[0m";
 const char* SAVE_CURSOR_POS = "\x1b[s";
 const char* RESTORE_CURSOR_POS = "\x1b[u";
 
-
-
 void main()
 {
+	DWORD dwMode = 0;
+	HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	GetConsoleMode(hOut, &dwMode);
+	dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+	SetConsoleMode(hOut, dwMode);
 
 	int height = 0;
 	char firstLetterOfName = 0;
 	int avatarHP = 0;
-	
+
 	std::cout << TITLE << MAGENTA << "Welcome to ZORP!" << RESET_COLOR << std::endl;
 	std::cout << INDENT << "ZORP is a game of adventure, danger, and low cunning." << std::endl;
 	std::cout << INDENT << "It is definitely not related to any other text-based adventure game." << std::endl << std::endl;
@@ -81,9 +84,9 @@ void main()
 		avatarHP = 0;
 	}
 	
-	std::cout << std::endl << "Using a complex deterministic algorithm, it has been calculated that you have " << avatarHP << " hit point(s)." << std::endl;
+	std::cout << INDENT << "Using a complex deterministic algorithm, it has been calculated that you have " << avatarHP << " hit point(s)." << std::endl;
 
-	std::cout << std::endl << "Press 'Enter' to exit the program." << std::endl;
+	std::cout << std::endl << INDENT << "Press 'Enter' to exit the program." << std::endl;
 	std::cin.get();
     return;
 }
