@@ -73,6 +73,8 @@ void main()
 		}
     	std::cout << std::endl;
 	}
+	// move the cursor back to the top of the map
+	std::cout << RESTORE_CURSOR_POS;
 
 	std::cout << INDENT << "How tall are you, in centimeters? " << INDENT << YELLOW;
 
