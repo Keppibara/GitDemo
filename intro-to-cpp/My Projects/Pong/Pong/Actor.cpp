@@ -25,7 +25,7 @@ Vector2 Actor::GetPosition()
 
 Vector2 Actor::GetSize()
 {
-	return Vector2();
+	return m_size;
 }
 
 

@@ -91,7 +91,7 @@ void Application::BeginPlay()
 		});
 	m_walls.emplace_back(WallData
 		{
-			new Wall({ 0, m_screenHeight * m_wallSize }, { m_screenWidth, m_wallSize }),
+			new Wall({ 0, m_screenHeight + m_wallSize }, { m_screenWidth, m_wallSize }),
 			Vector2{ 1, -1}
 		});
 }

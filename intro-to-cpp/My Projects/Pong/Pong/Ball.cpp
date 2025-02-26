@@ -47,7 +47,7 @@ void Ball::CheckCollisionWith(Actor* other, Vector2 velocityMod)
 	{
 		// Apply the velocity mod
 		m_velocity.x *= velocityMod.x;
-		m_velocity.y += velocityMod.y;
+		m_velocity.y *= velocityMod.y;
 	}
 }
 
