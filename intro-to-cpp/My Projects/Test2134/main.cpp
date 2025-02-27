@@ -7,10 +7,25 @@ using std::string;
 
 int main()
 {
-	char text = tolower('L');
+	string line;
+	std::getline(stream, line);
 
-	std::cout << text;
+	std::vector<float> floats;
+	string current;
 
-	return 0;
+	for (char c : line)
+	{
+		if (c != ',' && c != ' ')
+		{
+			current += c;
+		}
+		else if (c == ' ')
+		{
+			// convert the string to a float and add it to the vector
+			floats.emplace_back(atof(current.c_str()));
+			current = "";
+		}
+	}
+	return stream;
 }
 
